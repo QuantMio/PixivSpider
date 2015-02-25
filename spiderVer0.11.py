@@ -7,6 +7,7 @@ import re
 import time
 import httplib
 import getpass
+import random
 from urllib2 import Request, urlopen, URLError, HTTPError
 
 print 'Please enter your Pixiv ID',
@@ -86,6 +87,7 @@ for line in open("save.txt"):
        reqline=re.search(h,d).group()
        httplib.HTTPConnection.debuglevel = 1
        
+       print 'Downloading Illust Pixiv ID %s'% (id)
        header={'Host':host,
        'User-Agent':'Mozilla/5.0 (Windows NT 10.0; WOW64; rv:35.0) Gecko/20100101 Firefox/35.0',
        'Accept':'image/png,image/*;q=0.8,*/*;q=0.5',
@@ -99,11 +101,17 @@ for line in open("save.txt"):
            f = file(filename,"wb") 
            f.write(response)  
            f.close() 
+           print 'Success.'
        else:
            filename="%s.png"%(id)
            f = file(filename,"wb") 
            f.write(response)  
            f.close() 
+           print 'Success.'
    else:
        print "ERROR"
+   
+   
+   delay=random.randint(2, 6)
+   time.sleep(delay)
      
