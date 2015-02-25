@@ -1,0 +1,9 @@
+('H:\\Python\\PyInstaller-2.1\\spiderVer0.11\\dist\\spiderVer0.11.exe',
+ True,
+ False,
+ 'spider.ico',
+ None,
+ [],
+ None,
+ False,
+ 1424876250L)

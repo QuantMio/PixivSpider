@@ -1,6 +1,6 @@
 # -*- mode: python -*-
-a = Analysis(['spiderVer0.1.py'],
-             pathex=['H:\\Python\\PyInstaller-2.1\\PyInstaller-2.1\\spiderVer0.1'],
+a = Analysis(['spiderVer0.11.py'],
+             pathex=['H:\\Python\\PyInstaller-2.1\\spiderVer0.11'],
              hiddenimports=[],
              hookspath=None,
              runtime_hooks=None)
@@ -10,7 +10,7 @@ exe = EXE(pyz,
           a.binaries,
           a.zipfiles,
           a.datas,
-          name='spiderVer0.1.exe',
+          name='spiderVer0.11.exe',
           debug=False,
           strip=None,
           upx=True,

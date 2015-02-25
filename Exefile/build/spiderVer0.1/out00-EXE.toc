@@ -1,9 +1,0 @@
-('H:\\Python\\PyInstaller-2.1\\PyInstaller-2.1\\spiderVer0.1\\dist\\spiderVer0.1.exe',
- True,
- False,
- 'spider.ico',
- None,
- [],
- None,
- False,
- 1424777931L)
